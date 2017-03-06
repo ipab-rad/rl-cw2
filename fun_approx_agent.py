@@ -16,13 +16,15 @@ class FunctionApproximationAgent(Agent):
         the initial state.
 
         Args:
-            road  -- 2-dimensional numpy array containing [x, y] points
+            road  -- 2-dimensional array containing [x, y] points
                      in pixel coordinates of the road grid
             cars  -- dictionary which contains the location and the size
                      of the agent and the opponents in pixel coordinates
             speed -- the relative speed of the agent with respect the others
             gird  -- 2-dimensional numpy array containing the latest grid
                      representation of the environment
+
+        For more information on the arguments have a look at the README.md
         """
 
         # Reset the total reward for the episode
@@ -36,7 +38,7 @@ class FunctionApproximationAgent(Agent):
         # print [Action.toString(a) for a in self.getActionsSet()]
 
         # Execute the action and get the received reward signal
-        # self.total_reward += self.move(action)
+        self.total_reward += self.move(Action.ACCELERATE)
 
         # IMPORTANT NOTE:
         # 'action' must be one of the values in the actions set,
@@ -48,13 +50,15 @@ class FunctionApproximationAgent(Agent):
         """ Constructs the next state from sensory signals.
 
         Args:
-            road  -- 2-dimensional numpy array containing [x, y] points
+            road  -- 2-dimensional array containing [x, y] points
                      in pixel coordinates of the road grid
             cars  -- dictionary which contains the location and the size
                      of the agent and the opponents in pixel coordinates
             speed -- the relative speed of the agent with respect the others
             gird  -- 2-dimensional numpy array containing the latest grid
                      representation of the environment
+
+        For more information on the arguments have a look at the README.md
         """
         pass
 

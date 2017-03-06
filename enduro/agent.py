@@ -104,16 +104,17 @@ class Agent(object):
 
     def initialise(self, road, cars, speed, grid):
         """ Called at the beginning of each episode, mainly used
-        for state initialisation.
+        for state initialisation. For more information on the arguments
+        have a look at the README.md
 
         Args:
-            road  -- 2-dimensional numpy array containing [x, y] points
-                     in pixel coordinates of the road grid
-            cars  -- dictionary which contains the location and the size
-                     of the agent and the opponents in pixel coordinates
-            speed -- the relative speed of the agent with respect the others
-            gird  -- 2-dimensional numpy array containing the latest grid
-                     representation of the environment
+            road: 2-dimensional array containing [x, y] points
+                  in pixel coordinates of the road grid
+            cars: dictionary which contains the location and the size
+                  of the agent and the opponents in pixel coordinates
+            speed: the relative speed of the agent with respect the others
+            gird:  2-dimensional numpy array containing the latest grid
+                   representation of the environment
 
         Returns:
             None
@@ -130,16 +131,17 @@ class Agent(object):
 
     def sense(self, road, cars, speed, grid):
         """ Called at each loop iteration to construct the new state from
-        the update environment grid.
+        the update environment grid. For more information on the arguments
+        have a look at the README.md
 
         Args:
-            road  -- 2-dimensional numpy array containing [x, y] points
-                     in pixel coordinates of the road grid
-            cars  -- dictionary which contains the location and the size
-                     of the agent and the opponents in pixel coordinates
-            speed -- the relative speed of the agent with respect the others
-            gird  -- 2-dimensional numpy array containing the latest grid
-                     representation of the environment
+            road: 2-dimensional array containing [x, y] points
+                  in pixel coordinates of the road grid
+            cars: dictionary which contains the location and the size
+                  of the agent and the opponents in pixel coordinates
+            speed: the relative speed of the agent with respect the others
+            gird: 2-dimensional numpy array containing the latest grid
+                  representation of the environment
         Returns:
             None
         """
