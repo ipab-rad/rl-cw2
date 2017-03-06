@@ -18,6 +18,6 @@ The `cars` argument is a dictionary which contains two keys `'self'` and `'other
 
 This is a single scalar in the range `[-50, 50]` which represents the speed of the agent relative to the opponents. Thus `-50` means that the agent has just collided and `50` means that the agent is moving as fast as possible.
 
-# Environment grid
+## Environment grid
 
 The `grid` argument is the same environment grid that you have already used during the first coursework.
