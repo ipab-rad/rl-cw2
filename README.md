@@ -36,6 +36,7 @@ The example ugent uses 9 features:
 9. Move to the center of the road from the right edge
 
 As you can see there are features which depend just on the state, just on the action and on both as well. If you run the agent you should obtain similar performance to the one bellow.
+
 ![Performance](https://raw.githubusercontent.com/ipab-rad/rl-cw2/master/figs/performance.png)
 
 You can inspect the results with:
