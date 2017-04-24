@@ -21,3 +21,13 @@ This is a single scalar in the range `[-50, 50]` which represents the speed of t
 ## Environment grid
 
 The `grid` argument is the same environment grid that you have already used during the first coursework.
+
+## Solution & Results
+
+![Results](https://raw.githubusercontent.com/ipab-rad/rl-cw2/master/figs/performance.png)
+
+You can inspect the results with:
+
+```
+python plot_log.py
+```
