@@ -43,7 +43,7 @@ The most significant weights correspond to greater relative velocity, followed b
 
 ![Features](https://raw.githubusercontent.com/ipab-rad/rl-cw2/master/figs/features.png)
 
-Finally, due to the fast convergence and noisy behaviour of the LFA agents it is a good idea to inspect the weight traces over learning. As you can see the agent clearly converges after 100 episodes.
+Finally, due to the fast convergence and noisy behaviour of the LFA agent it is a good idea to inspect the weight traces over learning. As you can see the agent clearly converges after 100 episodes.
 
 ![Traces](https://raw.githubusercontent.com/ipab-rad/rl-cw2/master/figs/traces.png)
 
