@@ -23,7 +23,7 @@ This is a single scalar in the range `[-50, 50]` which represents the speed of t
 The `grid` argument is the same environment grid that you have already used during the first coursework.
 
 ## Solution & Results
-The example ugent uses 9 features:
+The example agent uses 9 features:
 
 1. Positive relative speed
 2. Negative relative speed
@@ -35,9 +35,17 @@ The example ugent uses 9 features:
 8. Move to the center of the road from the left edge
 9. Move to the center of the road from the right edge
 
-As you can see there are features which depend just on the state, just on the action and on both as well. If you run the agent you should obtain similar performance to the one bellow.
+As you can see there are features which depend just on the state, just on the action and on both as well. If you run the agent you should obtain similar performance to the one bellow. The LFA agent performs much better than the Q-learning agent in the initial stages of learning. Eventlually, Q-learning achieves slightly better performance.
 
 ![Performance](https://raw.githubusercontent.com/ipab-rad/rl-cw2/master/figs/performance.png)
+
+The most significant weights correspond to greater relative velocity, followed by avoiding opponents on the right and left. Interestingly, the least significant feature is avoiding opponents in front. The most likely reason is due to the fact that avoiding frontal agents is quite stochastic and often results in collisons.
+
+![Features](https://raw.githubusercontent.com/ipab-rad/rl-cw2/master/figs/features.png)
+
+Finally, due to the fast convergence and noisy behaviour of the LFA agents it is a good idea to inspect the weight traces over learning. As you can see the agent clearly converges after 100 episodes.
+
+![Traces](https://raw.githubusercontent.com/ipab-rad/rl-cw2/master/figs/traces.png)
 
 You can inspect the results with:
 
