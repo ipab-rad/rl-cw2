@@ -21,3 +21,26 @@ This is a single scalar in the range `[-50, 50]` which represents the speed of t
 ## Environment grid
 
 The `grid` argument is the same environment grid that you have already used during the first coursework.
+
+## Solution & Results
+The example ugent uses 9 features:
+
+1. Positive relative speed
+2. Negative relative speed
+3. Potential collision
+4. Avoid opponent on the left
+5. Avoid opponent on the right
+6. Avoid opponent in front
+7. Accelerate when no potential collision
+8. Move to the center of the road from the left edge
+9. Move to the center of the road from the right edge
+
+As you can see there are features which depend just on the state, just on the action and on both as well. If you run the agent you should obtain similar performance to the one bellow.
+
+![Performance](https://raw.githubusercontent.com/ipab-rad/rl-cw2/master/figs/performance.png)
+
+You can inspect the results with:
+
+```
+python plot_log.py
+```
