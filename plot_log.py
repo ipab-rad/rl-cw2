@@ -19,8 +19,19 @@ plt.legend(handles=[mpatches.Patch(color='red', label='LFA'),
                     mpatches.Patch(color='blue', label='Q-learning')])
 
 plt.figure()
-plt.bar(xrange(len(log_fa[-1][1])), log_fa[-1][1])
+plt.bar([0.5 + x for x in xrange(len(log_fa[-1][1]))], log_fa[-1][1])
 plt.xlabel('Feature')
+plt.xticks(range(1, 11), ["Positive\nspeed",
+                          "Negative\nspeed",
+                          "Potential\ncollision",
+                          "Opponent\nleft",
+                          "Opponent\nright",
+                          "Opponent\nfront",
+                          "Accelerate",
+                          "Center\nleft",
+                          "Center\nright",
+                          "Offset"], rotation=45)
+plt.xlim([0, 11])
 plt.ylabel('Weight Value')
 plt.title('Feature Weights')
 
@@ -34,3 +45,6 @@ plt.title('Weights Traces')
 
 plt.show()
 
+
+
+        
